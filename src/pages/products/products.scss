@@ -1,0 +1,9 @@
+.products ion-item {
+    min-height: 120px;
+}
+
+.products ion-list {
+    max-height: 500px;
+    // overflow: scroll;
+    margin-top: 20px;
+}

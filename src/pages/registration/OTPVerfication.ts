@@ -12,8 +12,14 @@ import { NavController, IonicPage } from 'ionic-angular';
 })
 export class OTPVerficationPage {
 
+  Title: string = "OTP Verfication"
+
   constructor(public navCtrl: NavController) {
 
+  }
+
+  onSubmit() {
+    this.navCtrl.push("Products")
   }
 
 }

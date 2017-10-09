@@ -16,4 +16,6 @@ import { RegistrationPage } from "./registration";
     RegistrationPage
   ]
 })
-export class RegistrationModule { }
+export class RegistrationModule { 
+  Title:string="Registration"
+}

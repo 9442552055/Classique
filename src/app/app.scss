@@ -12,8 +12,20 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-.main-container {
+ion-app {
     background-image: url(../assets/main_bk.gif);
+    background-color: transparent !important;
+}
+
+ion-navbar {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.app-title-container {
+    width: 100%;
+    background: url(../assets/bg-app-title.jpg);
+    background-color: transparent !important;
 }
 
 .app-title {
@@ -23,9 +35,20 @@
     padding: 5px;
 }
 
+.page-title-container {
+    width: 100%;
+    background: url(../assets/bg-page-title.jpg);
+    background-color: transparent !important;
+}
+
 .page-title {
     color: skyblue;
-    padding: 5px;
+    padding-left: 5px;
+}
+
+.page-container {
+    margin-top: 90px;
+    overflow: hidden;
 }
 
 .footer-copyright {
@@ -54,34 +77,13 @@ div::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0);
 }
 
-.sign-up ion-item {
-    background: transparent;
-    color: darkblue;
+ion-navbar .toolbar-background {
+    background: transparent !important;
 }
 
-.sign-up ion-label,
-.sign-up .label-md-primary {
-    background: transparent;
-    color: darkblue !important;
-    margin-left: 5px;
-}
 
-.sign-up ion-input {
-    background: white;
-    color: darkblue !important;
-    border: solid white 5px;
-    border-radius: 5px;
-}
+/* for Iphone */
 
-.sign-up .item-inner {
-    border-bottom: none !important;
-}
-
-.sign-up .btn-send-otp {
-    background: darkblue;
-    padding: 25px;
-    font-size: medium;
-    margin-top: 45px;
-    border-radius: 5px;
-    text-align: center;
+.ios .ion-page.show-page~.nav-decor {
+    background: transparent !important;
 }

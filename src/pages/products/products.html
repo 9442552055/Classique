@@ -1,0 +1,16 @@
+<ion-content class="products" padding>
+
+
+    <ion-list scroll="true" overflow-scroll="false">
+
+        <ion-item *ngFor="let grocery of Products">
+            <div>
+                <label>  {{grocery.Name}}</label>
+
+                <img [src]="grocery.ImageURL" item-left>
+            </div>
+        </ion-item>
+    </ion-list>
+
+
+</ion-content>
