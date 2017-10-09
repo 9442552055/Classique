@@ -1,0 +1,87 @@
+// http://ionicframework.com/docs/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.main-container {
+    background-image: url(../assets/main_bk.gif);
+}
+
+.app-title {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.page-title {
+    color: skyblue;
+    padding: 5px;
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+div::-webkit-scrollbar {
+    border: none;
+    width: 0;
+    background: rgba(0, 0, 0, 0);
+}
+
+div::-webkit-scrollbar-track {
+    border: none;
+    width: 0;
+    background: rgba(0, 0, 0, 0);
+}
+
+div::-webkit-scrollbar-thumb {
+    border: none;
+    width: 0;
+    background: rgba(0, 0, 0, 0);
+}
+
+.sign-up ion-item {
+    background: transparent;
+    color: darkblue;
+}
+
+.sign-up ion-label,
+.sign-up .label-md-primary {
+    background: transparent;
+    color: darkblue !important;
+    margin-left: 5px;
+}
+
+.sign-up ion-input {
+    background: white;
+    color: darkblue !important;
+    border: solid white 5px;
+    border-radius: 5px;
+}
+
+.sign-up .item-inner {
+    border-bottom: none !important;
+}
+
+.sign-up .btn-send-otp {
+    background: darkblue;
+    padding: 25px;
+    font-size: medium;
+    margin-top: 45px;
+    border-radius: 5px;
+    text-align: center;
+}
