@@ -1,6 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { IonicApp, IonicModule, IonicErrorHandler  } from 'ionic-angular';
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 
@@ -14,8 +14,14 @@ import { RegistrationModule } from '../pages/registration/registration.module';
     MyApp
   ],
   imports: [
-    BrowserModule,RegistrationModule,
-    IonicModule.forRoot(MyApp, { preloadModules: true,animate: false })
+    BrowserModule, RegistrationModule,
+    IonicModule.forRoot(MyApp,
+      {
+        preloadModules: true,
+        animate: false,
+        scrollAssist: true,
+        autoFocusAssist: true
+      })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
