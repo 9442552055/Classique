@@ -1,20 +1,28 @@
 <ion-content class="signup">
-    <form class="sign-up" name="signupForm" padding>
+    <form class="sign-up" name="signupForm" novalidate (ngSubmit)="onSendOTP(signupForm)" [formGroup]="signupForm" padding>
         <!-- <ion-list> -->
         <ion-item>
             <ion-label color="primary" floating>Name</ion-label>
-            <ion-input name="customername"></ion-input>
+            <ion-input formControlName="customername" name="customername"></ion-input>
+        </ion-item>
+        <ion-item no-lines *ngIf="signupForm.get('customername').hasError('required') || signupForm.get('customername').hasError('minlength')">
+            <div class="error" *ngIf="signupForm.get('customername').hasError('required')">
+                Name is required
+            </div>
+            <div class="error" *ngIf="signupForm.get('customername').hasError('minlength')">
+                Minimum of 4 characters
+            </div>
         </ion-item>
         <ion-item>
             <ion-label color="primary" floating>Mobile number</ion-label>
-            <ion-input name="mobileno"></ion-input>
+            <ion-input formControlName="mobileno" name="mobileno"></ion-input>
         </ion-item>
         <ion-item>
             <ion-label color="primary" floating>Email</ion-label>
-            <ion-input name="email"></ion-input>
+            <ion-input formControlName="email" name="email"></ion-input>
         </ion-item>
         <!-- <ion-item> -->
-        <button ion-button icon-start class="btn-send-otp" (click)="onSendOTP()">
+        <button type="submit" ion-button icon-start class="btn-send-otp">
                     <!-- <ion-icon name="star"></ion-icon> -->
                     Send OTP
                 </button>
