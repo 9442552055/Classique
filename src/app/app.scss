@@ -39,15 +39,15 @@ ion-navbar {
     width: 100%;
     // background: url(../assets/bg-page-title.jpg);
     background-color: #065890 !important;
-}
-
-.page-title-container h4 {
-    margin-bottom: 0px !important;
+    height: 50px;
+    padding: 5px;
 }
 
 .page-title {
-    color: #00254b;
+    color: lightgrey;
     padding: 5px;
+    margin-bottom: 0px !important;
+    font-size: large;
 }
 
 .page-container {
@@ -92,8 +92,16 @@ ion-navbar .toolbar-background {
     background: transparent !important;
 }
 
-.error {
-    color: darkred !important;
+.error,
+.error ion-label {
+    color: red !important;
+    font-weight: bold;
+    background: #065890 !important;
+    font-size: 12.5px;
+    height: 15px !important;
+    padding-top: 0px!important;
+    padding-left: 20px;
+    margin: 0px;
 }
 
 

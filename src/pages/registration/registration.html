@@ -3,24 +3,25 @@
         <!-- <ion-list> -->
         <ion-item>
             <ion-label color="primary" floating>Name</ion-label>
-            <ion-input formControlName="customername" name="customername"></ion-input>
+            <ion-input #txt_customername formControlName="customername" name="customername" (blur)="validate(txt_customername)"></ion-input>
         </ion-item>
-        <ion-item no-lines *ngIf="signupForm.get('customername').hasError('required') || signupForm.get('customername').hasError('minlength')">
-            <div class="error" *ngIf="signupForm.get('customername').hasError('required')">
-                Name is required
-            </div>
-            <div class="error" *ngIf="signupForm.get('customername').hasError('minlength')">
-                Minimum of 4 characters
-            </div>
-        </ion-item>
+        <div class="error" *ngIf="Errors.customername">
+            {{Errors.customername}}
+        </div>
         <ion-item>
             <ion-label color="primary" floating>Mobile number</ion-label>
-            <ion-input formControlName="mobileno" name="mobileno"></ion-input>
+            <ion-input #txt_mobileno formControlName="mobileno" name="mobileno" (blur)="validate(txt_mobileno)"></ion-input>
         </ion-item>
+        <div class="error" *ngIf="Errors.mobileno">
+            {{Errors.mobileno}}
+        </div>
         <ion-item>
             <ion-label color="primary" floating>Email</ion-label>
-            <ion-input formControlName="email" name="email"></ion-input>
+            <ion-input #txt_email formControlName="email" name="email" (blur)="validate(txt_email)"></ion-input>
         </ion-item>
+        <div class="error" *ngIf="Errors.email">
+            {{Errors.email}}
+        </div>
         <!-- <ion-item> -->
         <button type="submit" ion-button icon-start class="btn-send-otp">
                     <!-- <ion-icon name="star"></ion-icon> -->
