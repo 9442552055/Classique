@@ -1,13 +1,26 @@
 <ion-content class="products" padding>
-
-
     <ion-list>
 
         <div class="item-seperator" *ngFor="let grocery of Products">
-            <div>
-                <label>  {{grocery.Name}}</label>
+            <div class="product-container table">
+                <img class="table-cell product-img-col" [src]="grocery.ImageURL" item-left>
+                <div class="table-cell product-detail">
+                    <div class="product-name">{{grocery.Name}}</div>
+                    <div class="product-desc">{{grocery.Description}}</div>
+                    <div class="product-amount">Rs.{{grocery.Amount}}<small>each</small></div>
+                    <!-- <ion-item class="qty"> -->
 
-                <img [src]="grocery.ImageURL" item-left>
+                    <div class="flex_row qty">
+                        <label for="qty">Qty</label>
+                        <button class="button icon ion-minus-circled red">-</button>
+                        <ion-input name="qty" [ngModel]="grocery.quantity"></ion-input>
+                        <button class="button icon ion-plus-circled green">+</button>
+                    </div>
+                    <!-- </ion-item> -->
+                </div>
+                <!-- <div class="table-cell align-bottom col-total">
+                    Total: Rs.<strong>{{grocery.quantity?grocery.quantity*grocery.Amount:'100'}}</strong>
+                </div> -->
             </div>
         </div>
     </ion-list>

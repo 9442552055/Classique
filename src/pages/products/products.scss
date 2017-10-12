@@ -1,9 +1,5 @@
-.products ion-item {
-    height: 125px;
-}
-
 .products img {
-    width: 65px;
+    width: auto;
     height: auto;
     float: left;
     padding: 10px 2px;
@@ -20,4 +16,88 @@
     clear: both;
     display: block;
     border-top: 1px solid lightgrey;
+}
+
+.product-container .qty input {
+    border: 1px solid lightgray;
+    width: 40px;
+    margin: 0px !important;
+    height: 30px;
+    color: darkblue;
+}
+
+.product-container .qty {
+    border: none !important;
+    width: 70px;
+    margin-top: 5px;
+}
+
+.qty button {
+    width: 50px !important;
+}
+
+.product-img-col {
+    width: 40%;
+}
+
+.product-detail {
+    width: 60%;
+}
+
+.product-detail .item-inner {
+    border: none !important;
+}
+
+.align-bottom {
+    vertical-align: bottom !important;
+}
+
+.table {
+    display: table;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.product-name {
+    font-weight: bold;
+    padding: 5px;
+    font-size: large;
+}
+
+.product-desc {
+    color: gray;
+    padding: 5px;
+}
+
+.product-amount {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.product-amount small {
+    padding: 2px 5px;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.flex_row label {
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.flex_row {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    height: 30px;
 }

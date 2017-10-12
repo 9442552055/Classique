@@ -12,10 +12,10 @@ export class ProductsPage {
 
     Title: string = "Products"
     Products: ProductModel[] = [
-        { Name: "Bubble Top", ImageURL: "assets/products/BT.jpg", Amount: 1, Description: "20 liters bubble top" },
-        { Name: "2 Litre Bottle", ImageURL: "assets/products/2lit.jpg", Amount: 1, Description: "20 liters bubble top" },
-        { Name: "1 Litre Bottle", ImageURL: "assets/products/1lit.jpg", Amount: 1, Description: "20 liters bubble top" },
-        { Name: "500 Milli-Litre Bottle", ImageURL: "assets/products/500ml.jpg", Amount: 1, Description: "20 liters bubble top" }
+        { Name: "Bubble Top", ImageURL: "assets/products/BT.jpg", Amount: 45, Description: "20 litres bubble top" },
+        { Name: "2L Bottle", ImageURL: "assets/products/2lit.jpg", Amount: 32, Description: "2 litres bottle" },
+        { Name: "1L Bottle", ImageURL: "assets/products/1lit.jpg", Amount: 22, Description: "1 litre bottle" },
+        { Name: "500ml Bottle", ImageURL: "assets/products/500ml.jpg", Amount: 14, Description: "500ml bubble top" }
     ];
     constructor(public navCtrl: NavController) {
 
