@@ -52,7 +52,7 @@ export class RegistrationPage implements OnInit {
   onSendOTP() {
     var isValid = true;
     for (var key in this.validators) {
-      this.Errors[key] = this.validators[key]()
+      this.Errors[key] = this.validators[key](this.signupForm.controls[key].value)
       if (this.Errors[key]) {
         isValid = false;
         return false;

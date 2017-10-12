@@ -1,5 +1,5 @@
 .products img {
-    width: auto;
+    width: 120px;
     height: auto;
     float: left;
     padding: 10px 2px;
@@ -24,6 +24,7 @@
     margin: 0px !important;
     height: 30px;
     color: darkblue;
+    text-align: center;
 }
 
 .product-container .qty {
@@ -83,10 +84,12 @@
 
 .red {
     color: red;
+    font-size: large;
 }
 
 .green {
     color: green;
+    font-size: large;
 }
 
 .flex_row label {
